@@ -1,0 +1,115 @@
+<!--
+  ~ Copyright (c) 2020. http://hiteshsahu.com- All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ If you use or distribute this project then you MUST ADD A COPY OF LICENCE
+  ~ along with the project.
+  ~  Written by Hitesh Sahu <hiteshkrsahu@Gmail.com>, 2017.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hitesh_sahu.retailapp.view.fragment.ProfileFragment">
+    <RelativeLayout
+        android:id="@+id/rellay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_gray_light">
+
+        <RelativeLayout
+            android:id="@+id/imgUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle_border">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="9dp"
+                android:adjustViewBound="true"
+                android:background="@drawable/circle"
+                android:padding="3dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_user" />
+
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgUser"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-light"
+            android:text="Hiranmayi"
+            android:layout_marginTop="15sp"
+            android:textColor="@color/color_black"
+            android:textSize="32sp"/>
+    </RelativeLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="491dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/rellay">
+
+        <EditText
+            android:id="@+id/register_username"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="username" />
+
+        <EditText
+            android:id="@+id/register_email"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_username"
+            android:layout_marginTop="20dp"
+            android:hint="email" />
+
+        <EditText
+            android:id="@+id/register_mobile"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_email"
+            android:layout_marginTop="20dp"
+            android:hint="mobile number" />
+
+        <EditText
+            android:id="@+id/register_Dob"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_mobile"
+            android:layout_marginTop="10dp"
+            android:hint="DOB" />
+
+        <EditText
+            android:id="@+id/register_Adress"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_Dob"
+            android:layout_marginTop="20dp"
+            android:hint="Address" />
+
+        <EditText
+            android:id="@+id/register_CurrentPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_Adress"
+            android:layout_marginTop="20dp"
+            android:hint="currrent password" />
+
+        <Button
+            android:id="@+id/regButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_CurrentPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="register" />
+    </RelativeLayout>
+</RelativeLayout>
